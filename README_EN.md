@@ -44,4 +44,4 @@ If you need a specific version of the installer, mail me and I will reply you AS
 
 ## License
 This software is licensed under the terms of the [MIT License](https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE).
-See [LICENSE]((https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE)) for more details.
+See [LICENSE](https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE) for more details.
