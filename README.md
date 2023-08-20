@@ -14,7 +14,7 @@
        此项目为一个非官方的<a href="https://github.com/Ryujinx/Ryujinx">龙神任天堂Switch模拟器</a> [Avalonia UI 版] 安装程序构建版本。请前往官方代码仓库以了解更多细节。</br>
        <b>由于本安装程序仍处于测试阶段，所有功能可能均不稳定并可能导致数据丢失，请谨慎使用！</b></br>
        此项目与官方渠道的发行进度基本同步，与官方版本的同步不落后于最新版本一个星期。</br>
-    该项目源代码可在GitHub上以<a href="https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE">MIT许可证</a>获取。</br>
+    该项目源代码可在GitHub上以<a href="./LICENSE">MIT许可证</a>获取。</br>
 </p>
 
 ## 使用
@@ -45,5 +45,5 @@
 如果您需要某特定版本的安装包，与我联系后我也会尽快回复您。
 
 ## 开源许可
-此项目根据[MIT协议](https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE)开放源代码。
-了解更多请看[LICENSE](https://github.com/LuccaWang404/Ryujinx-ava-installers/LICENSE)文件。
+此项目根据[MIT协议](./LICENSE)开放源代码。
+了解更多请看[LICENSE](./LICENSE)文件。
