@@ -12,7 +12,7 @@ ENGLISH | [简体中文](./README.md)
 <p align="center">
        This repository contains the releases of Ryujinx [Avalonia UI] installer and the installer source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
        Setup</a> Script.</br>
-       This projrect is a non-official installer build of the Nintendo Switch emulator<a href="https://github.com/Ryujinx/Ryujinx">Ryujinx</a>. For more details, please visit the official repository of Ryujinx.</br>
+       This projrect is a non-official installer build of the Nintendo Switch emulator <a href="https://github.com/Ryujinx/Ryujinx">Ryujinx</a>. For more details, please visit the official repository of Ryujinx.</br>
        <b>As this installer is still in the testing stage, all functions may be unstable and may cause data loss, please use it with caution! </b></br>
        This project is generally synchronized with the progress of the Ryujinx release channel, and the latest update is not a week behind the official version.</br>
     The source code is available on Github under the <a href="./LICENSE">MIT license</a>. </br>
