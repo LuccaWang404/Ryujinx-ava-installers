@@ -28,7 +28,7 @@ Run the installer, follow the prompts and complete the installation process, Ryu
 - [x] .nso [Nintendo Switch Executable File]
 - [x] .kip [Nintendo Switch Executable File]
 
-After the installation, please follow the official guide to finish configuration of the emulator.[Setup & Configuration Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
+After the installation, please follow the official guide to finish configuration of the emulator. [Setup & Configuration Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
 **IMPORTANT**
 **To run this emulator, your PC must be equipped with at least 8GiB of RAM; failing to meet this requirement may result in a poor gameplay experience or unexpected crashes.**
