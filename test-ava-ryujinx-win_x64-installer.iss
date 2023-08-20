@@ -1,5 +1,5 @@
 #define MyAppName "Ryujinx Nintendo Switch Emulator"
-#define MyAppVersion "test-ava-($version)-win_x64"
+#define MyAppVersion "test-ava-1.1.999-win_x64"
 #define MyAppPublisher "Ryujinx"
 #define MyAppURL "https://ryujinx.org/"
 #define MyAppExeName "Ryujinx.Ava.exe"
@@ -35,26 +35,26 @@ DefaultDirName={autopf}\{#MyAppName}
 ChangesAssociations=yes
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=.\LICENSE.txt
+LicenseFile=LICENSE.txt
 PrivilegesRequired=lowest
-OutputDir=.\build
-OutputBaseFilename=ryujinx-test-ava-($version)-win_x64-installer
-SetupIconFile=.\Ryujinx.ico
+OutputDir=build
+OutputBaseFilename=ryujinx-test-ava-1.1.999-win_x64-installer
+SetupIconFile=Ryujinx.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 
 [Languages]
-Name: "chinesesimp"; MessagesFile: "compiler:Default.isl"
-Name: "english"; MessagesFile: "compiler:Languages\English.isl"
-Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "chinesesimp"; MessagesFile: "Simplified_Chinese.isl"
+Name: "english"; MessagesFile: "English.isl"
+Name: "japanese"; MessagesFile: "Japanese.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "J:\ryujinx-installers\($version)\publish\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "J:\ryujinx-installers\($version)\publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "publish\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt0}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey0}"; ValueData: ""; Flags: uninsdeletevalue
