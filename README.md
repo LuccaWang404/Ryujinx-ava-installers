@@ -7,7 +7,7 @@
 <b>龙神模拟器 [Avalonia UI 版] 安装程序</b>
 </h5>
 
-[ENGLISH](./README_EN.md)| 简体中文
+[ENGLISH](./README_EN.md) | 简体中文
 
 <p align="center">
        此仓库包含龙神模拟器 [Avalonia UI 版] 安装程序的发行版本和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码。</br>
