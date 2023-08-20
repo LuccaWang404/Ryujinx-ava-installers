@@ -1,4 +1,7 @@
-![](https://pic.imgdb.cn/item/64e25563661c6c8e54b74b17.png)
+<h1 align="center">
+  <br>
+  <a href="https://github.com/LuccaWang404/Ryujinx-ava-installers"><img src="https://pic.imgdb.cn/item/64e25563661c6c8e54b74b17.png" alt="Ryujinx-ava-installers" width="150"></a>
+</h1>
 
 <h5 align="center">
 <b>龙神模拟器 [Avalonia UI 版] 安装程序</b>
