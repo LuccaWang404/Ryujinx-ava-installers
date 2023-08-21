@@ -1,5 +1,5 @@
 #define MyAppName "Ryujinx Nintendo Switch Emulator"
-#define MyAppVersion "test-ava-1.1.999-win_x64"
+#define MyAppVersion "test-ava-release-win_x64"
 #define MyAppPublisher "Ryujinx"
 #define MyAppURL "https://ryujinx.org/"
 #define MyAppExeName "Ryujinx.Ava.exe"
