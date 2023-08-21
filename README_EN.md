@@ -15,7 +15,7 @@ ENGLISH | [简体中文](./README.md)
        This projrect is a non-official installer build of the Nintendo Switch emulator <a href="https://github.com/Ryujinx/Ryujinx">Ryujinx</a>. For more details, please visit the official repository of Ryujinx.</br>
        <b>As this installer is still in the testing stage, all functions may be unstable and may cause data loss, please use it with caution! </b></br>
        This project is generally synchronized with the progress of the Ryujinx release channel, and the latest update is not a week behind the official version.</br>
-    The source code is available on Github under the <a href="./LICENSE">MIT license</a>. </br>
+    The source code is available on Github under the <a href="./LICENSE.txt">MIT license</a>. </br>
 </p>
 
 ## Usage
@@ -43,5 +43,5 @@ If you know some deployable workflows, please contact me via [jh327063592@163.co
 If you need a specific version of the installer, mail me and I will reply you ASAP.
 
 ## License
-This software is licensed under the terms of the [MIT License](./LICENSE).
-See [LICENSE](./LICENSE) for more details.
+This software is licensed under the terms of the [MIT License](./LICENSE.txt).
+See [LICENSE](./LICENSE.txt) for more details.
