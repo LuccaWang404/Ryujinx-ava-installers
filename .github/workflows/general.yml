@@ -42,7 +42,7 @@ jobs:
       
 
       - name: Pushing new release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.11.1
         with:
           name: $tag_name
           artifacts: "build/*.exe"
