@@ -26,7 +26,7 @@ jobs:
             git config --global user.email 'jh327063592@163.com'
             git add ryujinx_latest_tag.txt
             git commit -m "Version Update"
-            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/LuccaWang404/ryujinx-latest-tag.git
+            git push origin main
           }
           cd ..
           wget -o test-ava-ryujinx-$tag_name-win_x64.zip https://github.com/Ryujinx/release-channel-master/releases/download/$tag_name/test-ava-ryujinx-$tag_name-win_x64.zip
