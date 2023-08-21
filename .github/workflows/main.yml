@@ -10,7 +10,7 @@ jobs:
         id: version_info
         run: |
           LATEST_RELEASE=$(curl --silent "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest" | jq -r .tag_name)
-          echo "build_version=$LATEST_RELEASE"
+          echo "build_version=$LATEST_RELEASE" >> $GITHUB_OUTPUT
         shell: bash
         
       - name: Create tag
@@ -60,7 +60,7 @@ jobs:
         run: |
           $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
           $tag_name = $response.tag_name
-          echo "build_version=$tag_name"
+          echo "build_version=$tag_name" >> $GITHUB_OUTPUT
         shell: powershell
       
       - name: Compile .ISS to .EXE Installer
