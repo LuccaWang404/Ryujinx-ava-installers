@@ -35,19 +35,25 @@ DefaultDirName={autopf}\{#MyAppName}
 ChangesAssociations=yes
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=LICENSE\LICENSE.txt
+LicenseFile=LICENSE.txt
 PrivilegesRequired=lowest
 OutputDir=build
-OutputBaseFilename=ryujinx-test-ava-1.1.999-win_x64-installer
+OutputBaseFilename=ryujinx-test-ava-win_x64-installer
 SetupIconFile=Ryujinx.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 
 [Languages]
-Name: "chinesesimp"; MessagesFile: "Simplified_Chinese.isl"
-Name: "english"; MessagesFile: "English.isl"
-Name: "japanese"; MessagesFile: "Japanese.isl"
+Name: "chinesesimp"; MessagesFile: "Languages\Simplified_Chinese.isl"
+Name: "chinesetran"; MessagesFile: "Languages\Traditional_Chinese.isl"
+Name: "japanese"; MessagesFile: "Languages\Japanese.isl"
+Name: "english"; MessagesFile: "Languages\English.isl"
+Name: "french"; MessagesFile: "Languages\French.isl"
+Name: "german"; MessagesFile: "Languages\German.isl"
+Name: "italian"; MessagesFile: "Languages\Italian.isl"
+Name: "russian"; MessagesFile: "Languages\Russian.isl"
+Name: "ukrainian"; MessagesFile: "Languages\Ukrainian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
