@@ -3,6 +3,27 @@ on:
     - cron: '*/5 * * * *' #check update per 5 minutes
 
 jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get version information
+        id: version_info
+        run: |
+          LATEST_RELEASE=$(curl --silent "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest" | jq -r .tag_name)
+          echo "build_version=$LATEST_RELEASE"
+        shell: bash
+        
+      - name: Create tag
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/${{ steps.version_info.outputs.build_version }}',
+              sha: context.sha
+            })
+
   get-release:
     runs-on: windows-latest
     steps:
@@ -34,15 +55,6 @@ jobs:
           7z x test-ava-ryujinx-$tag_name-win_x64.zip
         shell: powershell
       
-      - name: Compile .ISS to .EXE Installer
-        uses: Minionguyjpro/Inno-Setup-Action@v1.1.0
-        with:
-          path: test-ava-ryujinx-win_x64-installer.iss
-          options: /O+
-
-  tag-and-release-product:
-    runs-on: windows-latest
-    steps:
       - name: Get version information
         id: version_info
         run: |
@@ -50,17 +62,12 @@ jobs:
           $tag_name = $response.tag_name
           echo "build_version=$tag_name"
         shell: powershell
-
-      - name: Create tag
-        uses: actions/github-script@v6
+      
+      - name: Compile .ISS to .EXE Installer
+        uses: Minionguyjpro/Inno-Setup-Action@v1.1.0
         with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/${{ steps.version_info.outputs.build_version }}',
-              sha: context.sha
-            })
+          path: test-ava-ryujinx-win_x64-installer.iss
+          options: /O+
 
       - name: Pushing new release
         uses: ncipollo/release-action@v1.10.0
