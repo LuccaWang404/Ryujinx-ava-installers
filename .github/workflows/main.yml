@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/5 * * * *' #check update per 5 minutes
+    - cron: '*/10 * * * *' #check update per 5 minutes
 
 jobs:
   tag:
