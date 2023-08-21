@@ -1,5 +1,3 @@
-name: General Workflow
-
 on:
   schedule:
     - cron: '*/30 * * * *' #check update per 30 minutes
@@ -10,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Get latest tag name
+      - name: Check update & Download release
         id: check
         run: |
           $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
@@ -31,10 +29,7 @@ jobs:
             git commit -m "Version Update"
             git push origin main
           }
-        shell: powershell
-      
-      - name: Download and extract latest release
-        run: |
+          cd ..
           wget -o test-ava-ryujinx-$tag_name-win_x64.zip https://github.com/Ryujinx/release-channel-master/releases/download/$tag_name/test-ava-ryujinx-$tag_name-win_x64.zip
           7z x test-ava-ryujinx-$tag_name-win_x64.zip
         shell: powershell
@@ -44,6 +39,7 @@ jobs:
         with:
           path: test-ava-ryujinx-win_x64-installer.iss
           options: /O+
+      
 
       - name: Pushing new release
         uses: ncipollo/release-action@v1
@@ -56,10 +52,10 @@ jobs:
                  <a href="https://github.com/LuccaWang404/Ryujinx-ava-installers"><img src="https://pic.imgdb.cn/item/64e25563661c6c8e54b74b17.png" alt="Ryujinx-ava-installers" width="150"></a>
                 </h1>
                 <h5 align="center">
-                <b>龙神模拟器 [Avalonia UI 版] 安装程序 v$tag_name</b>
+                <b>龙神模拟器 [Avalonia UI 版] 安装程序发行版更新</b>
                 </h5>
                 <p align="center">
-                  此发行包含龙神模拟器 [Avalonia UI 版] 安装程序的v$tag_name和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码压缩存档。</br>
+                  此发行包含目前龙神模拟器 [Avalonia UI 版] 的最新版安装程序和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码压缩存档。</br>
                   此项目为一个非官方的<a href="https://github.com/Ryujinx/Ryujinx">龙神任天堂Switch模拟器</a> [Avalonia UI 版] 安装程序构建版本。请前往官方代码仓库以了解更多细节。</br>
                   <b>由于本安装程序仍处于测试阶段，所有功能均不稳定并可能导致数据丢失，请谨慎使用！</b></br>
                   此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
