@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/10 * * * *' #check update per 10 minutes
+    - cron: '*/60 * * * *' #check update per 10 minutes
 
 jobs:
   check-release:
