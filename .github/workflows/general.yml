@@ -1,3 +1,5 @@
+name: General Workflow
+
 on:
   schedule:
     - cron: '*/30 * * * *' #check update per 30 minutes
