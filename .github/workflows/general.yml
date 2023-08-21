@@ -48,7 +48,6 @@ jobs:
           echo "build_version=$tag_name"
 
   tag-and-release-product:
-    name: Create tag
     runs-on: windows-latest
     steps:
       - name: Get version info
@@ -57,16 +56,15 @@ jobs:
           $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
           $tag_name = $response.tag_name
           echo "build_version=$tag_name"
-        shell: bash
+        shell: powershell
 
       - name: Create tag
-        uses: actions/github-script@v6
-        with:
-          script: |
+        run: |
             git config --global user.name 'LuccaWang404'
             git config --global user.email 'jh327063592@163.com'
             git tag ${{ steps.version_info.outputs.build_version }}
             git push origin ${{ steps.version_info.outputs.build_version }}
+        shell: powershell
       - name: Pushing new release
         uses: ncipollo/release-action@v1.12.0
         with:
