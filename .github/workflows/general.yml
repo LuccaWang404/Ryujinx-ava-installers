@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/10 * * * *' #check update per 10 minutes
+    - cron: '*/5 * * * *' #check update per 10 minutes
 
 jobs:
   check-release:
@@ -47,7 +47,7 @@ jobs:
           echo "build_version=$tag_name"
 
       - name: Pushing new release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.11.0
         with:
           name: ${{ steps.version_info.outputs.build_version }}
           artifacts: "build/*.exe"
