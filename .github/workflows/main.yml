@@ -45,9 +45,6 @@ jobs:
           }         
           else {
             echo $tag_name > ryujinx_latest_tag.txt
-            git config --global user.name 'LuccaWang404'
-            git config --global user.email 'jh327063592@163.com'
-            git remote set-url origin https://LuccaWang404:${{ secrets.GITHUB_TOKEN }}@github.com/LuccaWang404/ryujinx-latest-tag.git
             git add ryujinx_latest_tag.txt
             git commit -m "Version Update"
             git push origin main
