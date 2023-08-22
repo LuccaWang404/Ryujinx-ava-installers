@@ -31,13 +31,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check update & Download release
-        id: check
+      - name: Check update & Write version information
         run: |
           $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
           $tag_name = $response.tag_name
-          git clone https://github.com/LuccaWang404/ryujinx-latest-tag.git
-          cd ryujinx-latest-tag
           $previous_tag_name = cat ryujinx_latest_tag.txt
           if ($tag_name -eq $previous_tag_name) {
             echo No newer version has been found.
@@ -45,24 +42,37 @@ jobs:
           }         
           else {
             echo $tag_name > ryujinx_latest_tag.txt
-            git remote set-url origin https://LuccaWang404:${{ secrets.GITHUB_TOKEN }}@github.com/LuccaWang404/ryujinx-latest-tag.git
-            git add ryujinx_latest_tag.txt
-            git commit -m "Version Update"
-            git push origin main
           }
-          cd ..
-          wget -o test-ava-ryujinx-$tag_name-win_x64.zip https://github.com/Ryujinx/release-channel-master/releases/download/$tag_name/test-ava-ryujinx-$tag_name-win_x64.zip
-          7z x test-ava-ryujinx-$tag_name-win_x64.zip
         shell: powershell
       
-      - name: Get version information
+      - name: Commit version information
+        run: |
+          git config --global user.name 'LuccaWang404'
+          git config --global user.email 'jh327063592@163.com'
+          git add ryujinx_latest_tag.txt
+          git commit -m "Version Update"
+        shell: powershell
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+      
+      - name: Save version information to $env
         id: version_info
         run: |
           $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
           $tag_name = $response.tag_name
-          echo "build_version=$tag_name" >> $GITHUB_OUTPUT
+          echo "build_version=$tag_name" >> $env:GITHUB_OUTPUT
         shell: powershell
       
+      - name: Download & extract latest release
+        run: |
+          wget -o test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/Ryujinx/release-channel-master/releases/download/${{ steps.version_info.outputs.build_version }}/test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+          7z x test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+        shell: powershell
+
       - name: Compile .ISS to .EXE Installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.1.0
         with:
