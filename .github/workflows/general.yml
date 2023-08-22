@@ -85,7 +85,7 @@ jobs:
           name: ${{ steps.version_info.outputs.build_version }}
           artifacts: "build/*.exe"
           tag: ${{ steps.version_info.outputs.build_version }}
-          body: "## 🔔龙神模拟器 [Avalonia UI 版] 安装程序发行版( v${{ steps.version_info.outputs.build_version }} )更新🔔
+          body: "## 🔔🐲 龙神模拟器 [Avalonia UI 版] 安装程序发行版( v${{ steps.version_info.outputs.build_version }} )更新🔔
           
                   此发行包含⚡️最新的⚡️( v ${{ steps.version_info.outputs.build_version }} )龙神模拟器 [Avalonia UI 版] 安装程序和安装程序以[Inno Setup](https://jrsoftware.org/isinfo.php)脚本编写的源代码压缩存档。</br>
                   此项目为一个非官方的[龙神任天堂Switch模拟器](https://github.com/Ryujinx/Ryujinx) [Avalonia UI 版] 安装程序构建版本。</br>
