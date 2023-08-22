@@ -1,5 +1,5 @@
 #define MyAppName "Ryujinx Nintendo Switch Emulator"
-#define MyAppVersion "test-ava-release-win_x64"
+#define MyAppVersion "test-ava-latest-release-win_x64"
 #define MyAppPublisher "Ryujinx"
 #define MyAppURL "https://ryujinx.org/"
 #define MyAppExeName "Ryujinx.Ava.exe"
@@ -38,7 +38,7 @@ AllowNoIcons=yes
 LicenseFile=INSTALLER_LICENSE.txt
 PrivilegesRequired=lowest
 OutputDir=build
-OutputBaseFilename=ryujinx-test-ava-win_x64-installer
+OutputBaseFilename=ryujinx-test-ava-win_x64-latest-installer
 SetupIconFile=Ryujinx.ico
 Compression=lzma
 SolidCompression=yes
