@@ -48,8 +48,6 @@
 | .nso     | Nintendo Switch Executable File     |
 | .kip     | Nintendo Switch Executable File     |
 
-
-
 安装完毕后，请根据官方教程完成模拟器配置。
 
 ~~如果有不认识的词句，请自行翻译。~~
