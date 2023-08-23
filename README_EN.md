@@ -33,7 +33,7 @@ For example, The NSP package (.nsp file) must be manually loaded in the emulator
 
 After the association, the default associated program of the NSP package in Windows is the Ryujinx.
 
-Now, double-click the file, you can start the game in the NSP package* directly.
+Now, double-click the file, you can start the game contains in the NSP package* directly.
 
 ❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
 
