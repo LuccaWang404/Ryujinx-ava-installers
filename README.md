@@ -13,7 +13,7 @@
        此仓库包含龙神模拟器 <b>[Avalonia UI 版]</b> 安装程序的发行版本和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码。</br>
        此项目为一个<b>非官方的</b>龙神任天堂Switch模拟器安装程序构建版本。</b></br>
        如果您想要了解各版本的更新内容，请前往官方仓库的发布页面以查看<a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog</a>。</br>
-       <b>❗️注意：本项目与龙神模拟器官方项目没有任何直接联系。如需要了解更多细节，请前往<a href="https://github.com/Ryujinx/Ryujinx">官方仓库。</a>❗️</b></br>
+       <b>❗️注意：本项目与龙神模拟器官方项目没有任何直接联系。如需要了解更多细节，请前往<a href="https://github.com/Ryujinx/Ryujinx">官方仓库</a>。❗️</b></br>
        <b>❗️另外，由于本安装程序仍处于测试阶段，所有功能可能均不稳定并可能导致数据丢失，请谨慎使用❗️</b></br>
        <b>❗️我不会对任何因使用本程序造成的数据丢失负责❗️</b></br>
        此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
