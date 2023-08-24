@@ -50,7 +50,7 @@ Now, double-click the file, you can start the game contains in the NSP package* 
 | .nso     | Nintendo Switch Executable File     |
 | .kip     | Nintendo Switch Executable File     |
 
-After the installation, please follow the official guide to finish configuration of the emulator. 
+After installation, please follow the official guide to finish configuration of the emulator. 
 
 [Setup & Configuration Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
