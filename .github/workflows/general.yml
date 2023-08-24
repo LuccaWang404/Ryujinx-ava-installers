@@ -104,7 +104,7 @@ jobs:
                   如果您需要了解更多细节，请前往官方仓库的发布页面以查看[Official Changelog](https://github.com/Ryujinx/Ryujinx/wiki/Changelog)。</br>
                   **❗️由于本安装程序仍处于测试阶段，所有功能均不稳定并可能导致数据丢失，请谨慎使用❗️**
                   
-                  > TIP：此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。"
+                  >TIP：此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。"
           omitBodyDuringUpdate: true
           allowUpdates: true
           replacesArtifacts: true
