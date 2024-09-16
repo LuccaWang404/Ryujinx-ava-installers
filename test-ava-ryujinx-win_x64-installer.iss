@@ -21,6 +21,7 @@
 #define MyAppAssocKey3 StringChange(MyAppAssocName3, " ", "") + MyAppAssocExt3
 #define MyAppAssocKey4 StringChange(MyAppAssocName4, " ", "") + MyAppAssocExt4
 #define MyAppAssocKey5 StringChange(MyAppAssocName5, " ", "") + MyAppAssocExt5
+;updated file ext names 240916
 
 [Setup]
 AppId={{A8AA1259-9531-80E8-BE2D-9E3D5F8A8BF0}
