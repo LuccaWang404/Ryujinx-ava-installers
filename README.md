@@ -15,7 +15,7 @@ ENGLISH | [简体中文](./README_CN.md)
        If you want to check out the update details of each version, please visit the official wiki page to see the <a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog(Not available now)</a>.</br>
        This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the ryujinx release channel.</br>
 	    <b>As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated(At least until the Ryujinx project is rebuilt like citra).</b></br>
-      <b>Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, <a href = "https://github.com/LuccaWang404/Ryujinx-Mirror.git">Ryujinx-Mirror</a> may help you.</b>
+      <b>Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, <a href = "https://github.com/LuccaWang404/Ryujinx-Mirror.git">Ryujinx-Mirror</a> may help you.</b></br>
 	    <b>If this project is not taken down due to DMCA, all compiled installers can be downloaded from the <a href ="https://github.com/LuccaWang404/Ryujinx-ava-installers/releases">Releases page</a>.</b>
 </p>
 
