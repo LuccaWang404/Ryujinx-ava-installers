@@ -1,46 +1,45 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/LuccaWang404/Ryujinx-ava-installers"><img src="https://pic.imgdb.cn/item/64e25563661c6c8e54b74b17.png" alt="Ryujinx-ava-installers" width="150"></a>
+  <a href="https://github.com/LuccaWang404/Ryujinx-ava-installers"><img src="./Ryujinx.ico" alt="Ryujinx-ava-installers" width="150"></a>
 </h1>
 
 <h5 align="center">
-<b>🐲 龙神模拟器 (Ryujinx Emulator) [Avalonia UI 版] 安装程序</b>
+<b>Ryujinx [Avalonia UI] Installer</b>
 </h5>
 
-[ENGLISH](./README_EN.md) | 简体中文
+ENGLISH | [简体中文](./README_CN.md)
 
-<p align="center">
-       此仓库包含龙神模拟器 <b>[Avalonia UI 版]</b> 安装程序的发行版本和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码。</br>
-       此项目为一个<b>非官方的</b>龙神任天堂Switch模拟器安装程序构建版本。</b></br>
-       如果您想要了解各版本的更新内容，请前往官方仓库的发布页面以查看<a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog</a>。</br>
-       <b>❗️注意：本项目与龙神模拟器官方项目没有任何直接联系。如需要了解更多细节，请前往<a href="https://github.com/Ryujinx/Ryujinx">官方仓库</a>。❗️</b></br>
-       <b>❗️另外，由于本安装程序仍处于测试阶段，所有功能可能均不稳定并可能导致数据丢失，请谨慎使用❗️</b></br>
-       <b>❗️我不会对任何因使用本程序造成的数据丢失负责❗️</b></br>
-       此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
-       该项目源代码可在GitHub上以<a href="./LICENSE.txt">MIT许可证</a>获取。</br>
+<p>
+       This repository contains the auto-compiled releases of yuzu emulator installer and the source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
+       Setup</a> Script.</br>
+       If you want to check out the update details of each version, please visit the official wiki page to see the <a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog(Not available now)</a>.</br>
+       This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the ryujinx release channel.</br>
+	    <b>As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated(At least until the Ryujinx project is rebuilt like citra).</b></br>
+      <b>Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of Ryujinx project, the <a href = "https://github.com/LuccaWang404/Ryujinx-Mirror.git">Ryujinx-Mirror</a> may help you.</b>
+	    <b>If this project is not taken down due to DMCA, all compiled installers can be downloaded from the <a href ="https://github.com/LuccaWang404/Ryujinx-ava-installers/releases">Releases page</a>.</b>
 </p>
 
-## 使用
-运行安装程序，根据程序引导完成安装，龙神模拟器 [Avalonia UI 版] 会安装在您的计算机上并完成文件关联。
+## Usage
+Run the installer, follow the prompts and complete the installation process, Ryujinx [Avalonia UI] will be installed on your PC and finish file association.
 
 ***
-> **TIP：什么是文件关联？**
+> **TIP：What is file association?**
 
-文件关联是将一种类型的文件与一个可以打开它的程序建立起一种依存关系。
+File association is to establish a dependency between a type of file and a program that can open it.
 
-举个例子来说，NSP程序包（.nsp文件）在尚未关联时，必须在模拟器中手动加载才能运行。
+For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.
 
-而关联后，NSP程序包在Windows中的默认关联程序是龙神模拟器，
+After the association, the default associated program of the NSP package in Windows is the Ryujinx.
 
-此时双击文件就能直接开始运行NSP包* 内部的游戏程序。
+Now, double-click the file, you can start the game contains in the NSP package* directly.
 
-❗️ ***NSP包仅限游戏本体，非更新、DLC包***
+❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
 
 ***
 
-**安装完毕后会被关联的文件类型：**
+**File types which will be associated:**
 
-| 文件类型 | 关联后显示名称                      |
+| File type | Display name after association     |
 | -------- | ----------------------------------- |
 | .nsp     | Nintendo Switch Application Package |
 | .xci     | Nintendo Switch Gamecard Image      |
@@ -49,33 +48,32 @@
 | .nso     | Nintendo Switch Executable File     |
 | .kip     | Nintendo Switch Executable File     |
 
-安装完毕后，请根据官方教程完成模拟器配置。
+After installation, please follow the official guide to finish configuration of the emulator. 
 
-~~如果有不认识的词句，请自行翻译。~~
+[Setup & Configuration Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
-[官方配置教程入口](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
+**❗️IMPORTANT❗️**
 
-**❗️重要的事情说三遍❗️** 
+**To run this emulator, your PC must be equipped with at least 8GiB of RAM; failing to meet this requirement may result in a poor gameplay experience or unexpected crashes.**
 
-**运行本模拟器的计算机至少需配备8GB的运行内存，不达标的计算机强行运行可能会导致游戏卡成PPT或闪崩。**
+## Latest Build
+As the project was successfully deployed to GitHub Actions, all versions will be compiled automatically and generally synchronized with the progress of the Ryujinx release channel.
 
-## 最新版本
-本项目已成功部署到Github Actions，每半小时同步一次版本更新，与官方渠道的发行进度基本同步。
+GitHub Actions will check updates per 30 minutes, keep this buid synchronized with the official version.
 
-**本项目纯属在空闲时间中用爱发电，而本人学业繁重，各种BUG的修复可能不及时，望大家多多包涵。**
+**I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**
 
-**❗️此安装程序为Windows专供。官方提供的其他操作系统版本请前往官网下载。**
+**❗️These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website(Not available now)](https://ryujinx.org/download).**
 
-[下载入口](https://ryujinx.org/download)
+## Contact
+If you have any promblems/suggestions, please contact me via [jh327063592@163.com](mailto:jh327063592@163.com).
 
-## 联系我
-如果您有各种问题/建议，您可以联系 **[我的枉异邮箱](mailto:jh327063592@163.com)：jh327063592@163.com**。
+If you need a specific version of the installer(1.1.960+), mail me and I will reply you ASAP.
 
-如果您需要某特定版本的安装包（1.1.960+），与我联系后我也会尽快回复您。
+If you have any suggestions or need help with this program, or if you find a BUG, please submit an issue.
 
-如果您对本程序有任何建议或者需要帮助，亦或者发现了BUG，请提交issue。
 
-## 开源许可
-此项目根据[MIT协议](./LICENSE.txt)开放源代码。
+## License
+This software is licensed under the terms of the [MIT License](./LICENSE.txt).
 
-了解更多请看[LICENSE](./LICENSE.txt)文件。
+See [LICENSE](./LICENSE.txt) for more details.
