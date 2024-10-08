@@ -14,7 +14,7 @@
        此项目是一个<b>非官方的</b>、一个利用GH Actions自动编译Ryujinx模拟器安装程序的项目。</b></br>
        如果您想要了解各版本的更新内容，请前往官方仓库的wiki页面以查看最新的<a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Changelog（现已不可用）</a>。</br>
        此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
-      <b>由于龙神模拟器已于2024年10月被迫删库跑路（真服了任天堂法务部），该项目不会继续更新。</b></br>
+      <b>由于龙神模拟器已于2024年10月被迫删库跑路（真服了任天堂法务部），该项目不会继续更新（至少等到Ryujinx像citra一样被重建）。</b></br>
       <b>本人有幸fork了一个Ryujinx的镜像仓库，如有兴趣请前往<a href = "https://github.com/LuccaWang404/Ryujinx-Mirror.git">Ryujinx-Mirror</a>。</b></br>
       <b>如果该项目没有被DMCA takedown，所有已编译的安装程序均可到本项目的<a href ="https://github.com/LuccaWang404/Ryujinx-ava-installers/releases">Releases</a>页面下载。</b>
 </p>
