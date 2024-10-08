@@ -50,7 +50,7 @@ Now, double-click the file, you can start the game contains in the NSP package* 
 
 After installation, please follow the official guide to finish configuration of the emulator. 
 
-[Setup & Configuration Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
+[Setup & Configuration Guide(Not available now)](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
 **❗️IMPORTANT❗️**
 
