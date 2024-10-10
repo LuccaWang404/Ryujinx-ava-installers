@@ -17,9 +17,9 @@ ENGLISH | [简体中文](./README_CN.md)
 </p>
 
 > [!IMPORTANT]
-> **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is rebuilt like citra).**</br>
-  **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror.git) may help you.**</br>
-	**If this project is not taken down due to DMCA, all compiled installers can be downloaded from the [Releases](https://github.com/LuccaWang404/Ryujinx-ava-installers/releases) page.**
+> 1. **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is rebuilt like citra).**</br>
+  2. **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror.git) may help you.**</br>
+	3. **If this project is not taken down due to DMCA, all compiled installers can be downloaded from the [Releases](https://github.com/LuccaWang404/Ryujinx-ava-installers/releases) page.**
 
 ## Usage
 Run the installer, follow the prompts and complete the installation process, Ryujinx [Avalonia UI] will be installed on your PC and finish file association.
