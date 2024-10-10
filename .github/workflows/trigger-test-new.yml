@@ -79,7 +79,6 @@ jobs:
         run: |
           wget -o test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/ryujinx-mirror/ryujinx/releases/download/${{ steps.version_info.outputs.build_version }}/test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
           7z x test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip -opublish
-          cd publish | rm -force Ryujinx.Ava.exe
         shell: powershell
 
       - name: Generate new .iss script
