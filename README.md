@@ -61,7 +61,8 @@ GitHub Actions will check updates per 30 minutes, keep this buid synchronized wi
 
 **I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**
 
-**❗️These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website (Not available now)](https://ryujinx.org/download).**
+> [!NOTICE]
+> **These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website (Not available now)](https://ryujinx.org/download).**
 
 ## Contact
 If you have any promblems/suggestions, please contact me via [jh327063592@163.com](mailto:jh327063592@163.com).
