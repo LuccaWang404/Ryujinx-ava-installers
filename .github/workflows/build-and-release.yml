@@ -111,7 +111,7 @@ jobs:
                   If you want to check out the update details of each version, please visit the mirror release page to see the [**Changelog**](https://github.com/ryujinx-mirror/ryujinx/releases/tag/${{ steps.version_info.outputs.build_version }}).</br>
                   
                   > [!TIP]</br>
-                  **This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the [ryujinx-mirror release channel](https://github.com/ryujinx-mirror/ryujinx/).**"
+                  **This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the [ryujinx-mirror release channel](https://github.com/ryujinx-mirror/ryujinx/releases).**"
           omitBodyDuringUpdate: true
           allowUpdates: true
           replacesArtifacts: true
