@@ -11,7 +11,7 @@ jobs:
       - name: Get version information
         id: version_info
         run: |
-          LATEST_RELEASE=$(curl --silent "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest" | jq -r .tag_name)
+          LATEST_RELEASE=$(curl --silent "https://api.github.com/repos/ryujinx-mirror/ryujinx/releases/latest" | jq -r .tag_name)
           echo "build_version=$LATEST_RELEASE" >> $GITHUB_OUTPUT
         shell: bash
         
@@ -34,16 +34,19 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check update & Write version information
+      # fuck powershell's default output is encoded in UTF-16LE
         run: |
-          $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
+          $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+          $PSDefaultParameterValues['Out-File:Encoding'] = 'Default'
+          $response = Invoke-RestMethod -Uri "https://api.github.com/repos/ryujinx-mirror/ryujinx/releases/latest"
           $tag_name = $response.tag_name
-          $previous_tag_name = cat ryujinx_latest_tag.txt
+          $previous_tag_name = cat ryujinx_latest_tag.flag
           if ($tag_name -eq $previous_tag_name) {
             echo No newer version has been found.
             exit 1
           }         
           else {
-            echo $tag_name > ryujinx_latest_tag.txt
+            echo $tag_name > ryujinx_latest_tag.flag
           }
         shell: powershell
       
@@ -51,7 +54,7 @@ jobs:
         run: |
           git config --global user.name 'LuccaWang404'
           git config --global user.email 'jh327063592@163.com'
-          git add ryujinx_latest_tag.txt
+          git add ryujinx_latest_tag.flag
           git commit -m "Version Update"
         shell: powershell
       
@@ -64,7 +67,7 @@ jobs:
       - name: Save version and date information to $env
         id: version_info
         run: |
-          $response = Invoke-RestMethod -Uri "https://api.github.com/repos/Ryujinx/release-channel-master/releases/latest"
+          $response = Invoke-RestMethod -Uri "https://api.github.com/repos/ryujinx-mirror/ryujinx/releases/latest"
           $tag_name = $response.tag_name
           echo "build_version=$tag_name" >> $env:GITHUB_OUTPUT
           $build_date = Get-Date
@@ -74,43 +77,45 @@ jobs:
       
       - name: Download & extract latest release
         run: |
-          wget -o test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/Ryujinx/release-channel-master/releases/download/${{ steps.version_info.outputs.build_version }}/test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
-          7z x test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+          wget -o test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/ryujinx-mirror/ryujinx/releases/download/${{ steps.version_info.outputs.build_version }}/test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+          7z x test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip -opublish
+        shell: powershell
+
+      - name: Generate new .iss script
+      # fuck powershell's default output is encoded in UTF-16LE
+        run: |
+          $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+          $PSDefaultParameterValues['Out-File:Encoding'] = 'Default'
+          echo '#define ExecutableVersion "${{ steps.version_info.outputs.build_version }}"' > autocompile.publish.tmp.script.iss
+          type autocompile.publish.base.script.iss >> autocompile.publish.tmp.script.iss
         shell: powershell
 
       - name: Compile .ISS to .EXE Installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.1.0
         with:
-          path: test-ava-ryujinx-win_x64-installer.iss
+          path: autocompile.publish.tmp.script.iss
           options: /O+
 
-      - name: Rename latest installer
-      # Rename compiled installer
-        run: |
-          Rename-Item -Path "build\ryujinx-test-ava-win_x64-latest-installer.exe" -NewName "ryujinx-test-ava-win_x64-${{ steps.version_info.outputs.build_version }}-installer.exe"
-        shell: powershell
 
       - name: Pushing new release
         uses: ncipollo/release-action@v1.13.0
         with:
           name: ${{ steps.version_info.outputs.build_version }}
-          artifacts: "build/*.exe"
+          artifacts: "*.zip, build/*.exe"
           tag: ${{ steps.version_info.outputs.build_version }}
-          body: "## 🐲 龙神模拟器 [Avalonia UI 版] 安装程序发行版( v${{ steps.version_info.outputs.build_version }} )更新
+          body: "## 🐲 Ryujinx-avalonia_ui.mirror Installer Update - ( ***V***.${{ steps.version_info.outputs.build_version }} )
 
                   ![GitHub Actions Badge](https://img.shields.io/badge/GitHub%20Actions-181717?logo=github&logoColor=fff&style=flat)</br>
                   ***This release was generated by GitHub Actions.***</br>
                   ***Build Time: ${{ steps.version_info.outputs.build_date }} , UTC+8; Version: ${{ steps.version_info.outputs.build_version }}***</br></br>
-                  此发行包含⚡️最新的⚡️( v ${{ steps.version_info.outputs.build_version }} )龙神模拟器 [Avalonia UI 版] 安装程序和安装程序以[Inno Setup](https://jrsoftware.org/isinfo.php)脚本编写的源代码压缩存档。</br>
-                  此项目为一个非官方的[龙神任天堂Switch模拟器](https://github.com/Ryujinx/Ryujinx) [Avalonia UI 版] 安装程序构建版本。</br>
-                  如果您需要了解更多细节，请前往官方仓库的发布页面以查看[Official Changelog](https://github.com/Ryujinx/Ryujinx/wiki/Changelog)。</br>
-                  **❗️由于本安装程序仍处于测试阶段，所有功能均不稳定并可能导致数据丢失，请谨慎使用❗️**
+                  This release contains the **⚡️LATEST⚡️**( ***V***.${{ steps.version_info.outputs.build_version }} ) auto-compiled installer of Ryujinx Emulator ***(Mirror Version)***.</br>
+                  If you want to check out the update details of each version, please visit the mirror release page to see the [**Changelog**](https://github.com/ryujinx-mirror/ryujinx/releases/tag/${{ steps.version_info.outputs.build_version }}).</br>
                   
-                  >TIP：此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。"
+                  > [!TIP]</br>
+                  **This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the [ryujinx-mirror release channel](https://github.com/ryujinx-mirror/ryujinx/releases).**"
           omitBodyDuringUpdate: true
           allowUpdates: true
           replacesArtifacts: true
           owner: "LuccaWang404"
           repo: "Ryujinx-ava-installers"
           token: ${{ secrets.GITHUB_TOKEN }}
-      
