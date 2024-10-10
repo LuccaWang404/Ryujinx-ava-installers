@@ -9,6 +9,9 @@
 
 ENGLISH | [简体中文](./README_CN.md)
 
+> [!NOTE]
+> Since the Ryujinx project has been rebuilt by `ryujinx-mirror`, a new release source (from [ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)) will be added to this repository.
+
 <p>
        This repository contains the auto-compiled releases of Ryujinx emulator installer and the source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
        Setup</a> Script.</br>
