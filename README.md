@@ -26,11 +26,11 @@ Run the installer, follow the prompts and complete the installation process, Ryu
 
 ***
 > [!TIP]
-  **What is file association?**
-> File association is to establish a dependency between a type of file and a program that can open it.
-  For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.
-  After the association, the default associated program of the NSP package in Windows is the Ryujinx.
-  Now, double-click the file, you can start the game contains in the NSP package* directly.
+  **What is file association?**</br>
+> File association is to establish a dependency between a type of file and a program that can open it.</br>
+  For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.</br>
+  After the association, the default associated program of the NSP package in Windows is the Ryujinx.</br>
+  Now, double-click the file, you can start the game contains in the NSP package* directly.</br>
 
 ❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
 
