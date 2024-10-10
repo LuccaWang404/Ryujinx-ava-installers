@@ -87,7 +87,7 @@ jobs:
         run: |
           $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
           $PSDefaultParameterValues['Out-File:Encoding'] = 'Default'
-          echo "#define ExecutableVersion ${{ steps.version_info.outputs.build_version }}" > autocompile.publish.tmp.script.iss
+          echo '#define ExecutableVersion "${{ steps.version_info.outputs.build_version }}"' > autocompile.publish.tmp.script.iss
           type autocompile.publish.base.script.iss >> autocompile.publish.tmp.script.iss
         shell: powershell
 
