@@ -12,12 +12,10 @@
 > [!NOTE]
 > 鉴于Ryujinx项目已被`ryujinx-mirror`团队接手并重建, 我会在接下来的自动编译中引入来自[ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)的新发布源。
 
-<p>
-       此仓库包含<b>自动编译的</b>龙神模拟器安装程序和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码。</br>
-       此项目是一个<b>非官方的</b>、一个利用GH Actions自动编译Ryujinx模拟器安装程序的项目。</b></br>
-       如果您想要了解各版本的更新内容，请前往官方仓库的wiki页面以查看最新的<a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Changelog（现已不可用）</a>。</br>
-       此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
-</p>
+此仓库包含**自动编译的**龙神模拟器安装程序和安装程序以 [Inno Setup](https://jrsoftware.org/isinfo.php) 脚本编写的源代码。</br>
+此项目是一个**非官方的**、一个利用GH Actions自动编译Ryujinx模拟器安装程序的项目。</br>
+如果您想要了解各版本的更新内容，请前往官方仓库的wiki页面以查看最新的 [Changelog（现已不可用）](https://github.com/Ryujinx/Ryujinx/wiki/Changelog)。</br>
+此项目通过GitHub Actions定时检查更新、即时构建，与官方渠道的发行进度基本同步。</br>
 
 > [!IMPORTANT]
 > 1. **由于龙神模拟器已于2024年10月被迫删库跑路（真服了任天堂法务部），该项目不会继续更新（至少等到Ryujinx像citra一样被重建）。**</br>

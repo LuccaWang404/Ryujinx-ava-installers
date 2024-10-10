@@ -12,12 +12,9 @@ ENGLISH | [简体中文](./README_CN.md)
 > [!NOTE]
 > Since the Ryujinx project has been reconstructed by `ryujinx-mirror`, a new release source (from [ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)) will be added to this repository.
 
-<p>
-       This repository contains the auto-compiled releases of Ryujinx emulator installer and the source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
-       Setup</a> Script.</br>
-       If you want to check out the update details of each version, please visit the official wiki page to see the <a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog (Not available now)</a>.</br>
-       This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the ryujinx release channel.</br>
-</p>
+This repository contains the auto-compiled releases of Ryujinx emulator installer and the source code written in [Inno Setup](https://jrsoftware.org/isinfo.php) Script.</br>
+If you want to check out the update details of each version, please visit the official wiki page to see the [Official Changelog (Not available now)](https://github.com/Ryujinx/Ryujinx/wiki/Changelog).</br>
+This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the ryujinx release channel.</br>
 
 > [!IMPORTANT]
 > 1. **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is reconstructed like citra).**</br>
