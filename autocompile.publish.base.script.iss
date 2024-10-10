@@ -1,7 +1,7 @@
 #define MyAppName "Ryujinx Nintendo Switch Emulator"
-#define MyAppVersion "test-ava-latest-release-win_x64"
-#define MyAppPublisher "Ryujinx"
-#define MyAppURL "https://ryujinx.org/"
+#define MyAppVersion "1.1." + ExecutableVersion + "-avalonia_ui.mirror"
+#define MyAppPublisher "Ryujinx-Mirror"
+#define MyAppURL "https://github.com/ryujinx-mirror/ryujinx/"
 #define MyAppExeName "Ryujinx.exe"
 #define MyAppAssocName0 "Nintendo Switch Application Package"
 #define MyAppAssocName1 "Nintendo Switch Gamecard Image"
@@ -21,7 +21,7 @@
 #define MyAppAssocKey3 StringChange(MyAppAssocName3, " ", "") + MyAppAssocExt3
 #define MyAppAssocKey4 StringChange(MyAppAssocName4, " ", "") + MyAppAssocExt4
 #define MyAppAssocKey5 StringChange(MyAppAssocName5, " ", "") + MyAppAssocExt5
-;updated file ext names 240916
+;#define ExecutableOutputBaseFilename "ryujinx-test-ava-1.1." + ExecutableVersion + "-win_x64-installer"
 
 [Setup]
 AppId={{A8AA1259-9531-80E8-BE2D-9E3D5F8A8BF0}
@@ -39,11 +39,12 @@ AllowNoIcons=yes
 LicenseFile=INSTALLER_LICENSE.txt
 PrivilegesRequired=lowest
 OutputDir=build
-OutputBaseFilename=ryujinx-test-ava-win_x64-latest-installer
+OutputBaseFilename="ryujinx-ava-1.1.{#ExecutableVersion}-win_x64-installer-multil"
 SetupIconFile=Ryujinx.ico
-Compression=lzma2
+Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+VersionInfoVersion=1.1.0.0
 
 [Languages]
 Name: "chinesesimp"; MessagesFile: "Languages\Simplified_Chinese.isl"
