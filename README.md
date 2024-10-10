@@ -12,26 +12,25 @@ ENGLISH | [简体中文](./README_CN.md)
 <p>
        This repository contains the auto-compiled releases of Ryujinx emulator installer and the source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
        Setup</a> Script.</br>
-       If you want to check out the update details of each version, please visit the official wiki page to see the <a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog(Not available now)</a>.</br>
+       If you want to check out the update details of each version, please visit the official wiki page to see the <a href="https://github.com/Ryujinx/Ryujinx/wiki/Changelog">Official Changelog (Not available now)</a>.</br>
        This project can check for updates regularly and built the installers instantly by GitHub Actions, so it is generally synchronized with the progress of the ryujinx release channel.</br>
-	    <b>As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated(At least until the Ryujinx project is rebuilt like citra).</b></br>
-      <b>Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, <a href = "https://github.com/LuccaWang404/Ryujinx-Mirror.git">Ryujinx-Mirror</a> may help you.</b></br>
-	    <b>If this project is not taken down due to DMCA, all compiled installers can be downloaded from the <a href ="https://github.com/LuccaWang404/Ryujinx-ava-installers/releases">Releases page</a>.</b>
 </p>
+
+> [!IMPORTANT]
+> **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is rebuilt like citra).**
+  **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror.git) may help you.**
+	**If this project is not taken down due to DMCA, all compiled installers can be downloaded from the [Releases](https://github.com/LuccaWang404/Ryujinx-ava-installers/releases) page.**
 
 ## Usage
 Run the installer, follow the prompts and complete the installation process, Ryujinx [Avalonia UI] will be installed on your PC and finish file association.
 
 ***
-> **TIP：What is file association?**
+> [!TIP]**What is file association?**
 
-File association is to establish a dependency between a type of file and a program that can open it.
-
-For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.
-
-After the association, the default associated program of the NSP package in Windows is the Ryujinx.
-
-Now, double-click the file, you can start the game contains in the NSP package* directly.
+> File association is to establish a dependency between a type of file and a program that can open it.
+  For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.
+  After the association, the default associated program of the NSP package in Windows is the Ryujinx.
+  Now, double-click the file, you can start the game contains in the NSP package* directly.
 
 ❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
 
@@ -50,7 +49,7 @@ Now, double-click the file, you can start the game contains in the NSP package* 
 
 After installation, please follow the official guide to finish configuration of the emulator. 
 
-[Setup & Configuration Guide(Not available now)](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
+[Setup & Configuration Guide (Not available now)](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
 **❗️IMPORTANT❗️**
 
@@ -63,7 +62,7 @@ GitHub Actions will check updates per 30 minutes, keep this buid synchronized wi
 
 **I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**
 
-**❗️These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website(Not available now)](https://ryujinx.org/download).**
+**❗️These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website (Not available now)](https://ryujinx.org/download).**
 
 ## Contact
 If you have any promblems/suggestions, please contact me via [jh327063592@163.com](mailto:jh327063592@163.com).
