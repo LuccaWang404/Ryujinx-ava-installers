@@ -25,8 +25,8 @@ ENGLISH | [简体中文](./README_CN.md)
 Run the installer, follow the prompts and complete the installation process, Ryujinx [Avalonia UI] will be installed on your PC and finish file association.
 
 ***
-> [!TIP]**What is file association?**
-
+> [!TIP]
+  **What is file association?**
 > File association is to establish a dependency between a type of file and a program that can open it.
   For example, The NSP package (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.
   After the association, the default associated program of the NSP package in Windows is the Ryujinx.
