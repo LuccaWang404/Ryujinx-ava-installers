@@ -28,10 +28,11 @@ Run the installer, follow the prompts and complete the installation process, Ryu
 > [!TIP]
   **What is file association?**</br>
 > File association is to establish a dependency between a type of file and a program that can open it.</br>
-  For example, The `NSP package` (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.</br>
-  After the association, the default associated program of the `NSP package` in Windows is `Ryujinx`.</br>
-  Now, double-click the file, you can start the game contains in the `NSP package*` directly.</br>
-  ❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
+
+For example, The `NSP package` (.nsp file) must be manually loaded in the emulator before it can be run when it is not associated.</br>
+After the association, the default associated program of the `NSP package` in Windows is `Ryujinx`.</br>
+Now, double-click the file, you can start the game contains in the `NSP package*` directly.</br>
+❗️ ***The NSP file can only be the base NSP, not Update/DLC packages.***
 
 ***
 
@@ -50,9 +51,8 @@ After installation, please follow the official guide to finish configuration of 
 
 [Setup & Configuration Guide (Not available now)](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
 
-**❗️IMPORTANT❗️**
-
-**To run this emulator, your PC must be equipped with at least 8GiB of RAM; failing to meet this requirement may result in a poor gameplay experience or unexpected crashes.**
+> [!IMPORTANT]
+>**To run this emulator, your PC must be equipped with at least 8GiB of RAM; failing to meet this requirement may result in a poor gameplay experience or unexpected crashes.**
 
 ## Latest Build
 As the project was successfully deployed to GitHub Actions, all versions will be compiled automatically and generally synchronized with the progress of the Ryujinx release channel.
