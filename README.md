@@ -10,7 +10,7 @@
 ENGLISH | [简体中文](./README_CN.md)
 
 > [!NOTE]
-> Since the Ryujinx project has been rebuilt by `ryujinx-mirror`, a new release source (from [ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)) will be added to this repository.
+> Since the Ryujinx project has been reconstructed by `ryujinx-mirror`, a new release source (from [ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)) will be added to this repository.
 
 <p>
        This repository contains the auto-compiled releases of Ryujinx emulator installer and the source code written in <a href ="https://jrsoftware.org/isinfo.php">Inno 
@@ -20,7 +20,7 @@ ENGLISH | [简体中文](./README_CN.md)
 </p>
 
 > [!IMPORTANT]
-> 1. **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is rebuilt like citra).**</br>
+> 1. **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is reconstructed like citra).**</br>
 > 2. **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror) may help you.**</br>
 >	3. **If this project is not taken down due to DMCA, all compiled installers can be downloaded from the [Releases](https://github.com/LuccaWang404/Ryujinx-ava-installers/releases) page.**
 
@@ -62,9 +62,8 @@ As the project was successfully deployed to GitHub Actions, all versions will be
 
 GitHub Actions will check updates per 30 minutes, keep this buid synchronized with the official version.
 
-**I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**
-
 > [!NOTE]
+**I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**</br>
 **These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website (Not available now)](https://ryujinx.org/download).**
 
 ## Contact
