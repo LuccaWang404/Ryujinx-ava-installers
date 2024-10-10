@@ -18,7 +18,7 @@ ENGLISH | [简体中文](./README_CN.md)
 
 > [!IMPORTANT]
 > 1. **As Ryujinx's repository was forced to be deleted by Nintendo's legal department in October 2024, this project will no longer be updated (At least until the Ryujinx project is rebuilt like citra).**</br>
-> 2. **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror.git) may help you.**</br>
+> 2. **Thankfully, I forked a mirror repository of Ryujinx before it's unavailable. If you are interested in the source code of the Ryujinx project, [Ryujinx-Mirror](https://github.com/LuccaWang404/Ryujinx-Mirror) may help you.**</br>
 >	3. **If this project is not taken down due to DMCA, all compiled installers can be downloaded from the [Releases](https://github.com/LuccaWang404/Ryujinx-ava-installers/releases) page.**
 
 ## Usage
@@ -65,12 +65,9 @@ GitHub Actions will check updates per 30 minutes, keep this buid synchronized wi
 **These builds are only for Windows. Official builds for Linux / macOS can be found on the [Official Website (Not available now)](https://ryujinx.org/download).**
 
 ## Contact
-If you have any promblems/suggestions, please contact me via [jh327063592@163.com](mailto:jh327063592@163.com).
-
-If you need a specific version of the installer(1.1.960+), mail me and I will reply you ASAP.
-
-If you have any suggestions or need help with this program, or if you find a BUG, please submit an issue.
-
+* If you have any promblems/suggestions, please contact me via [jh327063592@163.com](mailto:jh327063592@163.com).
+* If you need a specific version of the installer(1.1.960+), mail me and I will reply you ASAP.
+* If you have any suggestions or need help with this program, or if you find a BUG, please submit an issue.
 
 ## License
 This software is licensed under the terms of the [MIT License](./LICENSE.txt).
