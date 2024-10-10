@@ -10,7 +10,7 @@
 [ENGLISH](./README.md) | 简体中文
 
 > [!NOTE]
-> 鉴于Ryujinx项目已被`ryujinx-mirror`团队接手并重建, 我会引入来自[ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)的新发布源到接下来的自动编译中。
+> 鉴于Ryujinx项目已被`ryujinx-mirror`团队接手并重建, 我会在接下来的自动编译中引入来自[ryujinx-mirror/ryujinx](https://github.com/ryujinx-mirror/ryujinx)的新发布源。
 
 <p>
        此仓库包含<b>自动编译的</b>龙神模拟器安装程序和安装程序以 <a href ="https://jrsoftware.org/isinfo.php">Inno Setup</a> 脚本编写的源代码。</br>
