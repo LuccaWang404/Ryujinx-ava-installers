@@ -24,7 +24,7 @@
 ;#define ExecutableOutputBaseFilename "ryujinx-test-ava-1.1." + ExecutableVersion + "-win_x64-installer"
 
 [Setup]
-AppId={{A8AA1259-9531-80E8-BE2D-9E3D5F8A8BF0}
+AppId={{F34803B4-4505-4D49-5556-43EAAB9D5396}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
