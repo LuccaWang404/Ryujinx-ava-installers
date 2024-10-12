@@ -78,6 +78,7 @@ jobs:
       - name: Download & extract latest release
         run: |
           wget -o test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/ryujinx-mirror/ryujinx/releases/download/${{ steps.version_info.outputs.build_version }}/test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+          wget -o ryujinx-source-${{ steps.version_info.outputs.build_version }}.zip https://github.com/ryujinx-mirror/ryujinx/archive/refs/tags/${{ steps.version_info.outputs.build_version }}.zip
           7z x test-ava-ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip -opublish
         shell: powershell
 
