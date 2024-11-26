@@ -57,7 +57,7 @@ After installation, please follow the official guide to finish configuration of 
 ## Latest Build
 As the project was successfully deployed to GitHub Actions, all versions will be compiled automatically and generally synchronized with the progress of the Ryujinx release channel.
 
-GitHub Actions will check updates per 30 minutes, keep this buid synchronized with the official version.
+GitHub Actions will check updates per 30 minutes, keep this build synchronized with the official version.
 
 > [!NOTE]
 **I am working on this project in my free time. As a student, I may not be able to fix the bugs in time. I really appreciate your understanding.**</br>
